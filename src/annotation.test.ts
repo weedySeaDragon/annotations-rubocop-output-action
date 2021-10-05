@@ -40,12 +40,19 @@ describe(".write", () => {
 
     expect(mockStdout).toHaveBeenCalledWith("::error col=1::yo\n")
   })
-  test("with different level", () => {
-    const annotation = new Annotation("yo")
+  test("with warning level", () => {
+    const annotation = new Annotation("is a warning")
     annotation.level = "warning"
     annotation.write()
 
-    expect(mockStdout).toHaveBeenCalledWith("::warning::yo\n")
+    expect(mockStdout).toHaveBeenCalledWith("::warning::is a warning\n")
+  })
+  test("with convention level", () => {
+    const annotation = new Annotation("is a convention")
+    annotation.level = "convention"
+    annotation.write()
+
+    expect(mockStdout).toHaveBeenCalledWith("::convention::is a convention\n")
   })
   test("with everything", () => {
     const annotation = new Annotation("yo", {file: "file.rb", line: 1, col: 1})

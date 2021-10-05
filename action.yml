@@ -1,6 +1,6 @@
-name: RuboCop Annotate Action
-description: GitHub Action for creating annotations from RuboCop results
-author: "Nikolay Norkin <zduderman@gmail.com>"
+name: Annotations from Rubocop Output Action
+description: GitHub Action for creating annotations from json RuboCop results file. Annotations are created for error, warning, and convention offenses.
+author: "Ashley Engelund <ashley.engelund@gmail.com>"
 branding:
   icon: alert-triangle
   color: purple

@@ -1,6 +1,6 @@
 import {issueCommand} from "@actions/core/lib/command"
 
-type Level = "warning" | "error"
+type Level = "warning" | "error" | "convention"
 
 export interface AnnotationProperties {
   file?: string
