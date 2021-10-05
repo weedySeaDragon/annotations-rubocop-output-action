@@ -8,9 +8,11 @@ require('./sourcemap-register.js');/******/ (() => { // webpackBootstrap
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const command_1 = __nccwpck_require__(351);
+const offense_1 = __nccwpck_require__(143);
 class Annotation {
-    constructor(message, properties = {}) {
-        this.level = "error";
+    constructor(level, message, properties = {}) {
+        this.level = offense_1.OffenseSeverity.ERROR;
+        this.level = level;
         this.message = message;
         this.properties = properties;
     }
@@ -81,6 +83,35 @@ run();
 
 /***/ }),
 
+/***/ 143:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.OffenseSeverity = void 0;
+var OffenseSeverity;
+(function (OffenseSeverity) {
+    OffenseSeverity["CONVENTION"] = "convention";
+    OffenseSeverity["WARNING"] = "warning";
+    OffenseSeverity["ERROR"] = "error";
+})(OffenseSeverity = exports.OffenseSeverity || (exports.OffenseSeverity = {}));
+class Offense {
+    constructor(severity, cop_name, message, location) {
+        this.severity = OffenseSeverity.ERROR;
+        this.cop_name = "";
+        this.message = "";
+        this.severity = severity;
+        this.cop_name = cop_name;
+        this.message = message;
+        this.location = location;
+    }
+}
+exports.default = Offense;
+
+
+/***/ }),
+
 /***/ 267:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
@@ -131,9 +162,10 @@ function buildAnnotationFromOffense(file) {
         const properties = {
             file,
             col: offense.location.column,
-            line: offense.location.line
+            line: offense.location.line,
+            cop_name: offense.cop_name
         };
-        return new annotation_1.default(message, properties);
+        return new annotation_1.default(offense.severity, message, properties);
     };
 }
 function parseOffenses(file, offenses) {
