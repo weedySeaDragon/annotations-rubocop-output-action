@@ -12,6 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Create annotations from Rubocop offenses found in rubocop.json if there is a failure in the steps above
-        uses: ./rubocop-annotate-action
+        # This will run action.yml in this repo
+        uses: ./
         with:
           path: example-rubocop.json
