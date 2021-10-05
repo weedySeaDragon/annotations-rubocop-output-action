@@ -1,0 +1,18 @@
+name: Run rubocop-annotations action
+on: workflow_dispatch
+
+jobs:
+  rubocop-annotations:
+    runs-on: ubuntu-latest
+    name: Create annotations from rubocop output
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Create annotations from Rubocop offenses found in rubocop.json if there is a failure in the steps above
+        # This will run action.yml in this repo
+        uses: ./
+        with:
+          path: example-rubocop.json

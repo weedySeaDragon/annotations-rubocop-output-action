@@ -42,7 +42,7 @@ jobs:
         run: rubocop --format progress --format json --out rubocop.json
         
       - name: Create annotations from Rubocop offenses found in rubocop.json if there is a failure in the steps above  
-        uses: weedySeaDragon/rubocop-annotate-action@v0.2.1
+        uses: weedySeaDragon/rubocop-annotate-action@v0.3.0
         with:
           path: rubocop.json
         if: ${{ failure() }}

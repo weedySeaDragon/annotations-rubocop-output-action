@@ -1,6 +1,6 @@
 {
   "name": "rubocop-annotate-action",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "GitHub Action for creating annotations from RuboCop results (json output)",
   "main": "lib/main.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "format": "prettier --write **/*.ts",
     "format-check": "prettier --check **/*.ts",
     "lint": "eslint src/**/*.ts",
-    "package": "ncc build --source-map",
+    "package": "ncc build --license licenses.txt --source-map",
     "test": "jest",
     "all": "npm run build && npm run format && npm run lint && npm run package && npm test"
   },
@@ -30,7 +30,7 @@
     "@types/jest": "^27.0.2",
     "@types/node": "^14.0.25",
     "@typescript-eslint/parser": "^3.9.0",
-    "@zeit/ncc": "^0.22.3",
+    "@vercel/ncc": "^0.31.1",
     "eslint": "^7.5.0",
     "eslint-plugin-github": "^4.1.2",
     "eslint-plugin-jest": "^25.0.0-next.5",

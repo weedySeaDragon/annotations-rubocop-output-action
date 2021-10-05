@@ -1,0 +1,3297 @@
+{
+  "metadata": {
+    "rubocop_version": "0.75.0",
+    "ruby_engine": "ruby",
+    "ruby_version": "2.6.6",
+    "ruby_patchlevel": "146",
+    "ruby_platform": "x86_64-darwin17"
+  },
+  "files": [
+    {
+      "path": "Capfile",
+      "offenses": []
+    },
+    {
+      "path": "Gemfile",
+      "offenses": []
+    },
+    {
+      "path": "Rakefile",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/addresses_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/admin_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/admin_only/app_configuration_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/admin_only/dashboard_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/admin_only/design_guide_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/admin_only/master_checklist_types_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/admin_only/master_checklists_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/admin_only/member_app_waiting_reasons_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/admin_only/user_account_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/admin_only/user_profile_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/admin_only_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/application_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/business_categories_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/companies_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/concerns/images_utility.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/concerns/pagination_utility.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/concerns/robots_meta_tag_all_actions.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/concerns/robots_meta_tag_show_action_only.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/concerns/set_app_configuration.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/memberships_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/pages_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/payments_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/registrations_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/shf_applications_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/shf_documents_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/uploaded_files_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/user_checklists_controller.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/controllers/users_controller.rb",
+      "offenses": [
+        {
+          "severity": "convention",
+          "message": "Metrics/MethodLength: Method has too many lines. [36/30]",
+          "cop_name": "Metrics/MethodLength",
+          "corrected": false,
+          "location": {
+            "start_line": 85,
+            "start_column": 3,
+            "last_line": 127,
+            "last_column": 5,
+            "length": 2033,
+            "line": 85,
+            "column": 3
+          }
+        }
+      ]
+    },
+    {
+      "path": "app/helpers/admin_mailer_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/admin_only/dashboard_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/admin_only/design_guide_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/ancestry_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/application_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/application_mailer_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/checklist_common_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/checklists_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/companies_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/data_post_checkbox_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/membership_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/meta_image_tags_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/meta_og_tags_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/meta_tags_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/navigation_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/payments_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/policies_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/remote_link_pagination_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/shf_application_mailer_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/shf_applications_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/shf_icons_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/user_checklists_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/helpers/users_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/mailers/admin_mailer.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/mailers/application_mailer.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/mailers/common_mail_utils.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/mailers/mailgun_config.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/mailers/member_mailer.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/mailers/shf_application_mailer.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/mailers/user_mailer.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/activity_logger.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/adapters/abstract_adapter.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/adapters/abstract_csv_adapter.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/adapters/abstract_schema_org_adapter.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/adapters/address_to_schema_geo_coordinates.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/adapters/address_to_schema_place.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/adapters/address_to_schema_postal_address.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/adapters/addresses_into_schema_local_business.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/adapters/business_cats_into_knows_string.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/adapters/company_to_schema_local_business.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/adapters/payment_covering_year_to_csv_adapter.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/adapters/payment_to_csv_adapter.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/adapters/shf_application_to_csv_adapter.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/address.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/app_configuration.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/data_gatherer.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/design_guide.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/file_delivery_method.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/get_members_needing_packets.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/master_checklist.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/master_checklist_change_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/master_checklist_factory.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/master_checklist_type.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/member_app_waiting_reason.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/reports/csv_report.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/reports/payments_covering_year_csv_report.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/reports/payments_csv_report.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/reports/shf_applications_csv_report.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/user_account.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/user_checklist_factory.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/admin_only/user_profile.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/application_record.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/archived_membership.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/business_category.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/ckeditor/asset.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/ckeditor/attachment_file.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/ckeditor/picture.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/company.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/company_application.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/company_locator.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/company_meta_info_adapter.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/concerns/company_hmarkt_url_generator.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/concerns/has_swedish_organization.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/concerns/ordered_ancestry_entry.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/concerns/payment_utility.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/concerns/updated_at_range.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/condition.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/admin_email_alert.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/alert_log_str_maker.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/alert_logger.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/backup.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/company_email_alert.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/company_info_incomplete_alert.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/condition_responder.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/dinkurs_fetch.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/email_alert.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/first_membership_fee_owed_alert.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/h_branding_fee_due_alert.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/h_branding_fee_will_expire_alert.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/member_unpaid_over6_months_alert.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/members_need_packets_alert.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/membership_expire_alert.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/membership_lapsed_alert.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/membership_status_check.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/membership_will_expire_renewal_reqs_alert.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/shf_app_no_uploaded_files_alert.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/shf_backup_makers/abstract_backup_maker.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/shf_backup_makers/db_backup_maker.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/shf_backup_makers/file_set_backup_maker.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/shf_condition_error_backup_error.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/conditions_response/user_email_alert.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/csv_row.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/event.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/kommun.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/logfile_namer.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/member_page.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/membership.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/memberships_manager.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/one_time_tasker.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/one_time_tasker/failed_task_attempt.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/one_time_tasker/successful_task_attempt.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/one_time_tasker/task_attempt.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/payment.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/payment_covering_year.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/region.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/reqs_updaters/abstract_opposite_requirements.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/reqs_updaters/abstract_reqs_for_membership.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/reqs_updaters/abstract_requirements.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/reqs_updaters/membership_status_updater.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/reqs_updaters/requirements_for_co_info_complete.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/reqs_updaters/requirements_for_co_info_not_complete.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/reqs_updaters/requirements_for_first_membership_fee_owed.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/reqs_updaters/requirements_for_first_membership_fee_owed_not.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/reqs_updaters/requirements_for_h_branding_fee_due.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/reqs_updaters/requirements_for_h_branding_fee_not_due.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/reqs_updaters/requirements_for_h_branding_fee_will_expire.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/reqs_updaters/requirements_for_member_unpaid_more_than_x_months.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/reqs_updaters/requirements_for_membership.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/reqs_updaters/requirements_for_membership_lapsed.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/reqs_updaters/requirements_for_renewal.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/reqs_updaters/requirements_for_revoking_membership.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/schema_dot_org/geo_coordinates.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/schema_dot_org/local_business.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/schema_dot_org/organization.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/schema_dot_org/place.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/schema_dot_org/postal_address.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/schema_dot_org/thing.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/schema_dot_org/to_ld_json.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/shf_application.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/shf_document.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/shf_notify_slack.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/uploaded_file.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/user.rb",
+      "offenses": [
+        {
+          "severity": "convention",
+          "message": "Metrics/ClassLength: Class has too many lines. [325/250]",
+          "cop_name": "Metrics/ClassLength",
+          "corrected": false,
+          "location": {
+            "start_line": 16,
+            "start_column": 1,
+            "last_line": 581,
+            "last_column": 3,
+            "length": 20042,
+            "line": 16,
+            "column": 1
+          }
+        }
+      ]
+    },
+    {
+      "path": "app/models/user_checklist.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/user_checklist_manager.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/models/visitor.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/address_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/admin_only/admin_only_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/admin_only/app_configuration_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/admin_only/dashboard_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/admin_only/design_guide_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/admin_only/master_checklist_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/admin_only/master_checklist_type_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/admin_only/member_app_waiting_reason_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/admin_only/user_account_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/admin_only/user_profile_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/admin_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/application_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/business_category_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/company_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/page_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/payment_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/shf_application_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/shf_document_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/uploaded_file_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/user_checklist_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/user_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/policies/visitor_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/services/address_exporter.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/services/admin_alerter.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/services/dinkurs/client.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/services/dinkurs/errors.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/services/dinkurs/events_creator.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/services/dinkurs/events_parser.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/services/hips_service.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/services/input_sanitizer.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/services/memberships/become_former_individual_member_actions.rb",
+      "offenses": [
+        {
+          "severity": "warning",
+          "message": "Lint/UnusedMethodArgument: Unused method argument - `other_keyword_args`. If it's necessary, use `_` or `_other_keyword_args` as an argument name to indicate that it won't be used.",
+          "cop_name": "Lint/UnusedMethodArgument",
+          "corrected": false,
+          "location": {
+            "start_line": 27,
+            "start_column": 74,
+            "last_line": 27,
+            "last_column": 91,
+            "length": 18,
+            "line": 27,
+            "column": 74
+          }
+        }
+      ]
+    },
+    {
+      "path": "app/services/memberships/individual_membership_enter_grace_period_actions.rb",
+      "offenses": [
+        {
+          "severity": "warning",
+          "message": "Lint/UnusedMethodArgument: Unused method argument - `other_keyword_args`. If it's necessary, use `_` or `_other_keyword_args` as an argument name to indicate that it won't be used.",
+          "cop_name": "Lint/UnusedMethodArgument",
+          "corrected": false,
+          "location": {
+            "start_line": 27,
+            "start_column": 74,
+            "last_line": 27,
+            "last_column": 91,
+            "length": 18,
+            "line": 27,
+            "column": 74
+          }
+        }
+      ]
+    },
+    {
+      "path": "app/services/memberships/membership_actions.rb",
+      "offenses": [
+        {
+          "severity": "warning",
+          "message": "Lint/UnreachableCode: Unreachable code detected.",
+          "cop_name": "Lint/UnreachableCode",
+          "corrected": false,
+          "location": {
+            "start_line": 52,
+            "start_column": 7,
+            "last_line": 52,
+            "last_column": 11,
+            "length": 5,
+            "line": 52,
+            "column": 7
+          }
+        }
+      ]
+    },
+    {
+      "path": "app/services/memberships/new_individual_membership_actions.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/services/memberships/renew_individual_membership_actions.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/services/org_nummers_generator.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/services/shorten_url.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/validators/dinkurs_id_validator.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/validators/email_validator.rb",
+      "offenses": []
+    },
+    {
+      "path": "app/views/admin_only/master_checklist_types/_admin_only_master_checklist_type.json.jbuilder",
+      "offenses": []
+    },
+    {
+      "path": "app/views/admin_only/master_checklist_types/index.json.jbuilder",
+      "offenses": []
+    },
+    {
+      "path": "app/views/admin_only/master_checklist_types/show.json.jbuilder",
+      "offenses": []
+    },
+    {
+      "path": "app/views/admin_only/master_checklists/_master_checklist.json.jbuilder",
+      "offenses": []
+    },
+    {
+      "path": "app/views/admin_only/master_checklists/index.json.jbuilder",
+      "offenses": []
+    },
+    {
+      "path": "app/views/admin_only/master_checklists/show.json.jbuilder",
+      "offenses": []
+    },
+    {
+      "path": "app/views/memberships/_membership.json.jbuilder",
+      "offenses": []
+    },
+    {
+      "path": "app/views/memberships/index.json.jbuilder",
+      "offenses": []
+    },
+    {
+      "path": "app/views/memberships/show.json.jbuilder",
+      "offenses": []
+    },
+    {
+      "path": "app/views/uploaded_files/_uploaded_file.json.jbuilder",
+      "offenses": []
+    },
+    {
+      "path": "app/views/uploaded_files/index.json.jbuilder",
+      "offenses": []
+    },
+    {
+      "path": "app/views/uploaded_files/show.json.jbuilder",
+      "offenses": []
+    },
+    {
+      "path": "app/views/user_checklists/_user_checklist.json.jbuilder",
+      "offenses": []
+    },
+    {
+      "path": "app/views/user_checklists/index.json.jbuilder",
+      "offenses": []
+    },
+    {
+      "path": "app/views/user_checklists/show.json.jbuilder",
+      "offenses": []
+    },
+    {
+      "path": "config.ru",
+      "offenses": []
+    },
+    {
+      "path": "config/application.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/boot.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/deploy.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/deploy/production.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/deploy/staging.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/environment.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/environments/development.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/environments/production.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/environments/test.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/after_sign_in.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/application_controller_renderer.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/assets.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/backtrace_silencers.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/bullet.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/ckeditor.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/content_security_policy.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/cookies_serializer.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/devise.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/filter_parameter_logging.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/geocoder.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/high_voltage.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/hips_service.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/inflections.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/meta_tags.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/mime_types.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/new_framework_defaults_5_2.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/one_time_tasks_runner.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/paperclip_hashed_path.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/rack_profiler.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/routing_filter.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/session_store.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/initializers/wrap_parameters.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/puma.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/routes.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/schedule.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/sitemap.rb",
+      "offenses": []
+    },
+    {
+      "path": "config/spring.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161110203212_create_membership_applications.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161111183945_devise_create_users.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161111185238_add_user_to_membership_applications.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161112171216_add_status_to_membership_application.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161113110952_add_admin_to_users.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161119045729_create_uploaded_files.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161119050754_add_attachment_actual_file_to_uploaded_files.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161119074645_add_membership_application_ref_to_uploaded_files.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161128080706_create_business_categories.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161129012732_change_membership_application.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161129022533_create_joint_table_business_category_membership_application.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161130012213_add_is_member_to_user.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161130042130_create_companies.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161130122729_add_company_to_membership_application.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161201022139_remove_title_and_description_from_uploaded_files.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161201061301_create_join_table_business_category_company.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161202101242_add_membership_number_to_membership_application.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161206020021_add_company_number_index_to_company.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161218040617_drop_table_business_categories_companies.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161228160416_rename_region_to_old_region.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161228160857_create_regions.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161228161607_add_region_id_to_company.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20161228185350_add_state_to_membership_applications.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170104233630_change_state_default_in_membership_application.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170207183100_remove_is_member_from_users.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170207191717_remove_status_from_membership_applications.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170220223441_remove_old_region_from_companies.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170222090742_create_addresses.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170305120412_create_kommuns.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170305130437_add_kommun_ref_to_addresses.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170305190917_add_latitude_longitude_to_address.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170310102947_create_ckeditor_assets.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170310224421_fix_country_default_in_addresses.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170312125058_add_description_to_company.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170316182702_add_company_ref_to_ckeditor_asset.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170323202941_create_shf_documents.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170324015417_add_attachment_actual_file_to_shf_documents.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170418213009_add_address_visibility_to_companies.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170507103334_create_member_pages.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170525201944_create_member_app_waiting_reason.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170615091313_add_reason_waiting_to_membership_application.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170704095534_move_firstname_and_lastname_to_user.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170918123414_add_unique_index_to_membershipnumber.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170919120008_move_visibility_to_addresses.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170920153643_create_membershipnumber_sequence.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20170922144510_add_mail_to_addresses.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20171005113112_move_membershipnumber_to_user.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20171013141538_create_payments.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20171025191957_add_member_to_users.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20171026103648_add_dates_to_payments.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20171109142139_fix_country_data.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20171120170441_remove_waiting_for_payment_status.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20171213174816_rename_membership_application.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20180103171241_add_attachment_photo_to_users.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20180110215208_create_application_company_join_table.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20180116141245_create_app_configurations.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20180219132317_remove_cmpy_number_from_application.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20180326103433_create_events.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20180328105100_add_dinkurs_company_id_to_company.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20180428103625_add_hbrand_to_app_configuration.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20180624155644_add_show_dinkurs_events_column_to_company.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20180717043851_add_short_h_brand_url_to_companies.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20180719021503_add_short_proof_of_membership_url_to_users.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20181203121315_create_conditions.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20181214011549_remove_name_from_condition.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20181228073947_add_when_approved_to_shf_application.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20181229015347_change_config_default_in_condition.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20190123143128_create_file_delivery_methods.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20190123144623_add_file_delivery_method_to_shf_applications.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20190128210825_add_email_admin_new_app_recd_to_app_configuration.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20190312204251_add_membership_packet_sent_to_user.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20190326120854_add_uploaded_files_count_to_shf_applications.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20190514172102_add_meta_info_to_app_configuration.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20190601004310_create_one_time_tasker_task_attempts.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20190616183023_add_ancestry_to_business_category.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20190815215041_add_singleton_guard_to_app_configuration.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20190830212208_add_payment_too_soon_to_app_configuration.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20191030162238_add_social_media_to_companies.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20191130225826_create_master_checklists.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20191204203416_create_user_checklists.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20200108194625_add_is_in_use_to_master_checklists.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20200119054308_add_membership_guideline_list_to_application_configuration.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20200122200839_create_master_checklist_types.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20200122215813_add_master_checklist_type_to_master_checklist.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20200205213528_add_created_at_updated_at_to_addresses.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20201203180001_add_belongs_to_user_to_uploaded_files.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20201203181536_add_description_to_uploaded_files.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20201214212325_add_membership_expired_grace_period_to_app_configuration.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20210217002200_add_membership_term_duration_to_app_configuration.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20210217002300_add_membership_expiring_soon_days_to_app_configuration.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20210217032402_create_memberships.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20210217045905_add_membership_status_to_user.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20210220032402_create_archived_memberships.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/migrate/20210404015347_change_grace_period_in_app_configuration.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/require_all_seeders_and_helpers.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/seed_helpers.rb",
+      "offenses": [
+        {
+          "severity": "warning",
+          "message": "Lint/DuplicateMethods: Method `SeedHelper#regions` is defined at both db/seed_helpers.rb:32 and db/seed_helpers.rb:287.",
+          "cop_name": "Lint/DuplicateMethods",
+          "corrected": false,
+          "location": {
+            "start_line": 287,
+            "start_column": 3,
+            "last_line": 287,
+            "last_column": 13,
+            "length": 11,
+            "line": 287,
+            "column": 3
+          }
+        },
+        {
+          "severity": "warning",
+          "message": "Lint/DuplicateMethods: Method `SeedHelper#kommuns` is defined at both db/seed_helpers.rb:32 and db/seed_helpers.rb:292.",
+          "cop_name": "Lint/DuplicateMethods",
+          "corrected": false,
+          "location": {
+            "start_line": 292,
+            "start_column": 3,
+            "last_line": 292,
+            "last_column": 13,
+            "length": 11,
+            "line": 292,
+            "column": 3
+          }
+        },
+        {
+          "severity": "warning",
+          "message": "Lint/DuplicateMethods: Method `SeedHelper#business_categories` is defined at both db/seed_helpers.rb:32 and db/seed_helpers.rb:297.",
+          "cop_name": "Lint/DuplicateMethods",
+          "corrected": false,
+          "location": {
+            "start_line": 297,
+            "start_column": 3,
+            "last_line": 297,
+            "last_column": 25,
+            "length": 23,
+            "line": 297,
+            "column": 3
+          }
+        }
+      ]
+    },
+    {
+      "path": "db/seed_helpers/address_factory.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/seed_helpers/users_factory.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/seeders/ancestry_ordered_seeder.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/seeders/app_configuration_seeder.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/seeders/business_categories_seeder.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/seeders/file_delivery_methods_seeder.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/seeders/kommuns_seeder.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/seeders/master_checklist_types_seeder.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/seeders/master_checklists_seeder.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/seeders/regions_seeder.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/seeders/simple_class_yaml_seeder.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/seeders/user_checklists_seeder.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/seeders/yaml_seeder.rb",
+      "offenses": []
+    },
+    {
+      "path": "db/seeds.rb",
+      "offenses": []
+    },
+    {
+      "path": "docs/dev-workflow/workflow_for_pivotal_tracker_stories.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/app_configuration_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/assertion_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/basic_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/business_category_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/company_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/cookies_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/default_data.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/email_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/i18n_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/kommun_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/master_checklist_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/member_app_waiting_reason_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/membership_application_steps.rb",
+      "offenses": [
+        {
+          "severity": "convention",
+          "message": "Metrics/BlockNesting: Avoid more than 4 levels of block nesting.",
+          "cop_name": "Metrics/BlockNesting",
+          "corrected": false,
+          "location": {
+            "start_line": 87,
+            "start_column": 13,
+            "last_line": 94,
+            "last_column": 15,
+            "length": 522,
+            "line": 87,
+            "column": 13
+          }
+        }
+      ]
+    },
+    {
+      "path": "features/step_definitions/membership_packet_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/membership_status_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/membership_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/menu_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/navigation_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/page_head_section_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/payment_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/region_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/seeding_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/shf_documents_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/tables_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/upload_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/uploaded_file_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/user_checklist_steps.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/step_definitions/user_steps.rb",
+      "offenses": [
+        {
+          "severity": "warning",
+          "message": "Lint/Void: Variable `new_user` used in void context.",
+          "cop_name": "Lint/Void",
+          "corrected": false,
+          "location": {
+            "start_line": 46,
+            "start_column": 5,
+            "last_line": 46,
+            "last_column": 12,
+            "length": 8,
+            "line": 46,
+            "column": 5
+          }
+        }
+      ]
+    },
+    {
+      "path": "features/support/env.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/support/find_helpers.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/support/hooks.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/support/parameter_types.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/support/path_helpers.rb",
+      "offenses": [
+        {
+          "severity": "convention",
+          "message": "Metrics/CyclomaticComplexity: Cyclomatic complexity for get_path is too high. [39/36]",
+          "cop_name": "Metrics/CyclomaticComplexity",
+          "corrected": false,
+          "location": {
+            "start_line": 18,
+            "start_column": 3,
+            "last_line": 157,
+            "last_column": 5,
+            "length": 4401,
+            "line": 18,
+            "column": 3
+          }
+        }
+      ]
+    },
+    {
+      "path": "features/support/step_errors.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/support/vcr.rb",
+      "offenses": []
+    },
+    {
+      "path": "features/support/visit_page.rb",
+      "offenses": []
+    },
+    {
+      "path": "lib/app_version.rb",
+      "offenses": []
+    },
+    {
+      "path": "lib/fake_addresses/csv_fake_addresses_reader.rb",
+      "offenses": []
+    },
+    {
+      "path": "lib/fake_addresses/csv_fake_addresses_writer.rb",
+      "offenses": []
+    },
+    {
+      "path": "lib/generators/shf/email_alert/email_alert_generator.rb",
+      "offenses": []
+    },
+    {
+      "path": "lib/one_time_tasker/activity_log_tags.rb",
+      "offenses": []
+    },
+    {
+      "path": "lib/one_time_tasker/evaluated_rake_file.rb",
+      "offenses": []
+    },
+    {
+      "path": "lib/one_time_tasker/evaluated_rake_task.rb",
+      "offenses": []
+    },
+    {
+      "path": "lib/one_time_tasker/evaluated_tasks_state_updater.rb",
+      "offenses": []
+    },
+    {
+      "path": "lib/one_time_tasker/log_creator.rb",
+      "offenses": []
+    },
+    {
+      "path": "lib/one_time_tasker/tasks_finder.rb",
+      "offenses": []
+    },
+    {
+      "path": "lib/one_time_tasker/tasks_runner.rb",
+      "offenses": []
+    },
+    {
+      "path": "lib/shf_devise_failure_app.rb",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/backup.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/ci.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/conditions/load_conditions.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/conditions/process_conditions.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/cucumber.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/one_time/2017_Q4/delete_invalid_addresses.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/one_time/2017_Q4/payments.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/one_time/2017_Q4/users.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/one_time/2018_Q1/app_has_many_companies.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/one_time/2018_Q1/create_app_config.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/one_time/2019_Q1/set_when_approved.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/one_time/2019_Q2/format_city_names.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/one_time/2019_Q3/add_site_meta_image_to_app_configuration.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/one_time/2020-Q2/seed_master_checklists.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/one_time/2021-Q2/create-memberships.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/shf.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/shf_deploy_onetime.rake",
+      "offenses": []
+    },
+    {
+      "path": "lib/tasks/shf_onetime_examples.rake",
+      "offenses": []
+    },
+    {
+      "path": "script/cucumber",
+      "offenses": []
+    },
+    {
+      "path": "spec/controllers/admin_controller_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/controllers/application_controller_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/controllers/companies_controller_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/controllers/concerns/pagination_utility_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/controllers/concerns/robots_meta_tag_all_actions_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/controllers/concerns/robots_meta_tag_show_action_only_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/controllers/payments_controller_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/controllers/shf_applications_controller_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/controllers/user_checklists_controller_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/controllers/users_controller_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/create_membership_seq_if_needed.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/db/address_factory_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/db/seed_development_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/db/seed_production_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/db/seeders/app_configuration_seeder_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/db/seeders/kommuns_seeder_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/db/seeders/master_checklists_seeder_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/db/seeders/regions_seeder_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/db/seeders/simple_class_yaml_seeder_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/db/seeders/yaml_seeder_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/db/shared_specs_db_seeding.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/addresses.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/app_configurations.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/archived_memberships.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/business_categories.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/companies.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/company_applications.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/conditions.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/dinkurs_events.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/events.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/events_hashes.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/file_delivery_methods.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/kommuns.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/master_checklist_types.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/master_checklists.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/member_app_waiting_reasons.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/member_pages.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/memberships.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/one_time_tasker/task_attempts.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/payments.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/regions.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/shf_applications.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/shf_documents.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/uploaded_files.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/user_checklists.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/users.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/factories/visitors.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/features/support/cucumber_steps_errors_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/features/support/visit_page_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/helpers/admin_only/dashboard_helper_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/helpers/ancestry_helper_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/helpers/application_helper_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/helpers/companies_helper_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/helpers/data_post_checkbox_helper_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/helpers/meta_image_tags_helper_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/helpers/meta_og_tags_helper_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/helpers/meta_tags_helper_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/helpers/navigation_helper_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/helpers/payments_helper_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/helpers/shf_application_mailer_helper_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/helpers/shf_applications_helper_spec.rb",
+      "offenses": [
+        {
+          "severity": "warning",
+          "message": "Lint/AmbiguousRegexpLiteral: Ambiguous regexp literal. Parenthesize the method arguments if it's surely a regexp literal, or add a whitespace to the right of the `/` if it should be a division.",
+          "cop_name": "Lint/AmbiguousRegexpLiteral",
+          "corrected": false,
+          "location": {
+            "start_line": 402,
+            "start_column": 62,
+            "last_line": 402,
+            "last_column": 62,
+            "length": 1,
+            "line": 402,
+            "column": 62
+          }
+        }
+      ]
+    },
+    {
+      "path": "spec/helpers/shf_icons_helper_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/helpers/user_checklists_helper_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/helpers/users_helper_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/i18n_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/lib/app_version_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/lib/fake_addresses/csv_fake_addresses_reader_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/lib/fake_addresses/csv_fake_addresses_writer_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/lib/one_time_tasker/evaluated_rake_file_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/lib/one_time_tasker/evaluated_rake_task_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/lib/one_time_tasker/evaluated_tasks_state_updater_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/lib/one_time_tasker/log_creator_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/lib/one_time_tasker/shared_context/many_task_files_context.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/lib/one_time_tasker/shared_context/mock_rake_task.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/lib/one_time_tasker/shared_context/simple_rake_task_files_maker.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/lib/one_time_tasker/tasks_finder_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/lib/one_time_tasker/tasks_runner_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/lib/tasks/conditions/process_conditions_rake_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/mailers/admin_mailer_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/mailers/application_mailer_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/mailers/member_mailer_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/mailers/previews/admin_mailer_preview.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/mailers/previews/member_mailer_preview.rb",
+      "offenses": [
+        {
+          "severity": "convention",
+          "message": "Metrics/MethodLength: Method has too many lines. [33/30]",
+          "cop_name": "Metrics/MethodLength",
+          "corrected": false,
+          "location": {
+            "start_line": 119,
+            "start_column": 3,
+            "last_line": 169,
+            "last_column": 5,
+            "length": 2732,
+            "line": 119,
+            "column": 3
+          }
+        }
+      ]
+    },
+    {
+      "path": "spec/mailers/previews/pick_random_helpers.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/mailers/previews/shf_application_mailer_preview.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/mailers/previews/user_mailer_preview.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/mailers/shared_email_tests.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/mailers/shf_application_mailer_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/matchers/matcher_file_set_backup.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/activity_logger_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/adapters/abstract_adapter_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/adapters/abstract_schema_org_adapter_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/adapters/address_to_schema_geo_coordinates_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/adapters/address_to_schema_place_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/adapters/address_to_schema_postal_address_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/adapters/company_to_schema_local_business_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/adapters/shf_application_to_csv_adapter_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/address_shared_examples.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/address_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/admin_only/app_configuration_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/admin_only/data_gatherer_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/admin_only/get_members_needing_packets_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/admin_only/master_checklist_change_policy_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/admin_only/master_checklist_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/admin_only/master_checklist_type_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/admin_only/reports/csv_report_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/admin_only/reports/payments_covering_year_csv_report_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/admin_only/reports/payments_csv_report_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/admin_only/reports/shf_applications_csv_report_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/admin_only/user_checklist_factory_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/archived_membership_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/attachment_file_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/business_category_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/company_application_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/company_locator_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/company_meta_info_adapter_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/company_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/concerns/ordered_ancestry_entry_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/concerns/payment_utility_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/concerns/update_at_range_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/condition_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/admin_email_alert_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/alert_log_str_maker_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/alert_logger_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/backup_makers/abstract_backup_maker_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/backup_makers/db_backup_maker_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/backup_makers/file_set_backup_maker_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/backup_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/company_email_alert_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/company_info_incomplete_alert_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/condition_responder_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/dinkurs_fetch_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/email_alert_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/first_membership_fee_owed_alert_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/hbranding_fee_due_alert_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/hbranding_fee_will_expire_alert_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/member_unpaid_for_6_months_alert_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/members_need_packets_alert_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/membership_expire_alert_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/membership_lapsed_alert_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/membership_status_check_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/shf_app_no_uploaded_files_alert_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/conditions_response/user_email_alert_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/csv_row_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/event_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/file_delivery_method_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/kommun_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/logfile_namer_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/member_app_waiting_reason_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/member_page_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/membership_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/memberships_manager_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/one_time_tasker/failed_task_attempt_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/one_time_tasker/successful_task_attempt_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/one_time_tasker/task_attempt_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/payment_covering_year_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/payment_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/picture_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/region_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/reqs_updaters/abstract_reqs_for_membership_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/reqs_updaters/abstract_requirements_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/reqs_updaters/membership_status_updater_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/reqs_updaters/requirements_for_co_info_complete_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/reqs_updaters/requirements_for_co_info_not_complete_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/reqs_updaters/requirements_for_first_membership_fee_owed_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/reqs_updaters/requirements_for_h_branding_fee_due_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/reqs_updaters/requirements_for_h_branding_fee_not_due_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/reqs_updaters/requirements_for_h_branding_fee_will_expire_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/reqs_updaters/requirements_for_member_unpaid_more_than_x_months_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/reqs_updaters/requirements_for_membership_lapsed_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/reqs_updaters/requirements_for_membership_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/reqs_updaters/requirements_for_renewal_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/reqs_updaters/requirements_for_revoking_membership_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/schema_dot_org/geo_coordinates_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/schema_dot_org/local_business_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/schema_dot_org/organization_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/schema_dot_org/place_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/schema_dot_org/postal_address_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/schema_dot_org/thing_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/schema_dot_org/to_ld_json_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/shf_application_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/shf_document_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/shf_notify_slack_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/uploaded_file_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/user_checklist_manager_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/user_checklist_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/models/user_spec.rb",
+      "offenses": [
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 638, 4 is not aligned with `describe 'proof_of_membership_jpg' do` at 628, 3.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 638,
+            "start_column": 5,
+            "last_line": 638,
+            "last_column": 7,
+            "length": 3,
+            "line": 638,
+            "column": 5
+          }
+        },
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 647, 4 is not aligned with `describe 'proof_of_membership_jpg=' do` at 640, 3.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 647,
+            "start_column": 5,
+            "last_line": 647,
+            "last_column": 7,
+            "length": 3,
+            "line": 647,
+            "column": 5
+          }
+        },
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 656, 4 is not aligned with `describe 'clear_proof_of_membership_jpg_cache' do` at 649, 3.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 656,
+            "start_column": 5,
+            "last_line": 656,
+            "last_column": 7,
+            "length": 3,
+            "line": 656,
+            "column": 5
+          }
+        },
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 723, 2 is not aligned with `describe 'has_shf_application?' do` at 695, 1.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 723,
+            "start_column": 3,
+            "last_line": 723,
+            "last_column": 5,
+            "length": 3,
+            "line": 723,
+            "column": 3
+          }
+        },
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 751, 2 is not aligned with `describe 'shf_application' do` at 725, 1.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 751,
+            "start_column": 3,
+            "last_line": 751,
+            "last_column": 5,
+            "length": 3,
+            "line": 751,
+            "column": 3
+          }
+        },
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 778, 2 is not aligned with `describe 'member_fee_payment_due?' do` at 753, 1.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 778,
+            "start_column": 3,
+            "last_line": 778,
+            "last_column": 5,
+            "length": 3,
+            "line": 778,
+            "column": 3
+          }
+        },
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 801, 2 is not aligned with `describe 'member_or_admin?' do` at 780, 1.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 801,
+            "start_column": 3,
+            "last_line": 801,
+            "last_column": 5,
+            "length": 3,
+            "line": 801,
+            "column": 3
+          }
+        },
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 932, 2 is not aligned with `describe 'allowed_to_pay_hbrand_fee?' do` at 879, 1.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 932,
+            "start_column": 3,
+            "last_line": 932,
+            "last_column": 5,
+            "length": 3,
+            "line": 932,
+            "column": 3
+          }
+        },
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 1075, 2 is not aligned with `describe 'has_app_for_company?' do` at 1010, 1.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 1075,
+            "start_column": 3,
+            "last_line": 1075,
+            "last_column": 5,
+            "length": 3,
+            "line": 1075,
+            "column": 3
+          }
+        },
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 1142, 2 is not aligned with `describe 'has_app_for_company_number?' do` at 1077, 1.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 1142,
+            "start_column": 3,
+            "last_line": 1142,
+            "last_column": 5,
+            "length": 3,
+            "line": 1142,
+            "column": 3
+          }
+        },
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 1193, 2 is not aligned with `describe 'sort_apps_by_when_approved' do` at 1181, 1.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 1193,
+            "start_column": 3,
+            "last_line": 1193,
+            "last_column": 5,
+            "length": 3,
+            "line": 1193,
+            "column": 3
+          }
+        },
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 1210, 2 is not aligned with `describe 'admin?' do` at 1195, 1.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 1210,
+            "start_column": 3,
+            "last_line": 1210,
+            "last_column": 5,
+            "length": 3,
+            "line": 1210,
+            "column": 3
+          }
+        },
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 1217, 2 is not aligned with `describe 'full_name' do` at 1212, 1.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 1217,
+            "start_column": 3,
+            "last_line": 1217,
+            "last_column": 5,
+            "length": 3,
+            "line": 1217,
+            "column": 3
+          }
+        },
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 1234, 2 is not aligned with `describe 'has_full_name?' do` at 1219, 1.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 1234,
+            "start_column": 3,
+            "last_line": 1234,
+            "last_column": 5,
+            "length": 3,
+            "line": 1234,
+            "column": 3
+          }
+        },
+        {
+          "severity": "warning",
+          "message": "Lint/UselessAssignment: Useless assignment to variable - `member`.",
+          "cop_name": "Lint/UselessAssignment",
+          "corrected": false,
+          "location": {
+            "start_line": 1599,
+            "start_column": 9,
+            "last_line": 1599,
+            "last_column": 14,
+            "length": 6,
+            "line": 1599,
+            "column": 9
+          }
+        },
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 1818, 2 is not aligned with `describe 'get_short_proof_of_membership_url' do` at 1797, 1.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 1818,
+            "start_column": 3,
+            "last_line": 1818,
+            "last_column": 5,
+            "length": 3,
+            "line": 1818,
+            "column": 3
+          }
+        },
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 1840, 2 is not aligned with `describe 'membership_packet_sent?' do` at 1829, 1.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 1840,
+            "start_column": 3,
+            "last_line": 1840,
+            "last_column": 5,
+            "length": 3,
+            "line": 1840,
+            "column": 3
+          }
+        },
+        {
+          "severity": "convention",
+          "message": "Layout/BlockAlignment: `end` at 1873, 2 is not aligned with `describe 'toggle_membership_packet_status' do` at 1842, 1.",
+          "cop_name": "Layout/BlockAlignment",
+          "corrected": false,
+          "location": {
+            "start_line": 1873,
+            "start_column": 3,
+            "last_line": 1873,
+            "last_column": 5,
+            "length": 3,
+            "line": 1873,
+            "column": 3
+          }
+        }
+      ]
+    },
+    {
+      "path": "spec/models/visitor_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/policies/address_policy_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/policies/admin_only_policy_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/policies/admin_only_user_profile_policy_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/policies/admin_policy_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/policies/app_configuration_policy_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/policies/application_policy_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/policies/business_category_policy_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/policies/company_policy_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/policies/page_policy_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/policies/shf_application_policy_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/policies/shf_document_policy_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/policies/user_policy_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/rails_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/routing/application_configuration_routes_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/routing/company_to_schema_local_business_image_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/routing/routes_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/services/address_exporter_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/services/admin_alerter_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/services/dinkurs/client_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/services/dinkurs/events_creator_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/services/dinkurs/events_parser_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/services/hips_service_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/services/input_sanitizer_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/services/memberships/membership_actions_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/services/memberships/new_individual_membership_actions_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/services/memberships/renew_individual_membership_actions_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/services/org_nummers_generator_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/services/shorten_url_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_context/activity_logger.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_context/companies.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_context/expect_tar_has_entries.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_context/mock_app_configuration.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_context/named_dates.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_context/rake.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_context/stub_email_rendering.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_context/stub_paperclip_methods_code.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_context/stub_paperclip_methods_dynamic.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_context/unstub_paperclip_all_run_commands.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_context/unstub_paperclip_convert_commands.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_context/unstub_paperclip_file_commands.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_context/unstub_paperclip_identify_commands.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_context/users.rb",
+      "offenses": [
+        {
+          "severity": "convention",
+          "message": "Metrics/MethodLength: Method has too many lines. [37/30]",
+          "cop_name": "Metrics/MethodLength",
+          "corrected": false,
+          "location": {
+            "start_line": 104,
+            "start_column": 3,
+            "last_line": 151,
+            "last_column": 5,
+            "length": 2391,
+            "line": 104,
+            "column": 3
+          }
+        }
+      ]
+    },
+    {
+      "path": "spec/shared_examples/backup_maker_target_filename_with_default.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_examples/check_env_vars.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_examples/condition_responder_timing_shared.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_examples/shared_conditions.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/shared_examples/user_payment_dates.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/spec_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/support/ae_aasm_matchers/ae_aasm_matchers.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/support/ae_aasm_matchers/have_valid_event.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/support/ae_aasm_matchers/have_valid_state.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/support/ae_aasm_matchers/have_valid_transition_from_to.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/support/data_creation_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/support/geocoder.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/support/validator_helper.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/validators/dinkurs_id_validator_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/validators/email_validator_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/views/admin_mailer/members_need_packets.html.haml_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/views/application/_navigation.html.haml_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/views/application/_paginate_footer.html.haml_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/views/companies/_map_companies.html.haml_spec.rb",
+      "offenses": []
+    },
+    {
+      "path": "spec/views/selective_asset_load_spec.rb",
+      "offenses": []
+    }
+  ],
+  "summary": {
+    "offense_count": 32,
+    "target_file_count": 697,
+    "inspected_file_count": 697
+  }
+}
