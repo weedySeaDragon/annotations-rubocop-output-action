@@ -89,3 +89,20 @@ jobs:
 
       - run: yarn install
       - run: yarn run lint
+
+
+  run-on-example-file:
+    runs-on: ubuntu-latest
+
+    name: Run action on example-rubocop.json file
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Create annotations from Rubocop offenses found in rubocop.json if there is a failure in the steps above
+        # This will run action.yml in this repo
+        uses: ./
+        with:
+          path: example-rubocop.json
