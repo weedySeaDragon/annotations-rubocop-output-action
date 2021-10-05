@@ -1,4 +1,4 @@
-name: Build Test and Lint
+name: Test, Lint, and Run using example-rubocop file
 
 on: push
 
@@ -93,8 +93,9 @@ jobs:
 
   run-on-example-file:
     runs-on: ubuntu-latest
-
     name: Run action on example-rubocop.json file
+    needs: [test, prettier, lint]
+
     steps:
       # To use this repository's private action,
       # you must check out the repository
