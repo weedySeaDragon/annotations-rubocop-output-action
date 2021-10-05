@@ -1,7 +1,7 @@
 {
   "name": "rubocop-annotate-action",
-  "version": "0.2.0",
-  "description": "GitHub Action for creating annotations from RuboCop results",
+  "version": "0.2.1",
+  "description": "GitHub Action for creating annotations from RuboCop results (json output)",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -14,17 +14,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/duderman/rubocop-annotate-action.git"
+    "url": "git+https://github.com/weedySeaDragon/rubocop-annotate-action.git"
   },
   "keywords": [
     "actions",
     "rubocop",
     "annotate"
   ],
-  "author": "Nikolay Norkin <zduderman@gmail.com>",
+  "author": "Ashley Engelund <ashley.engelund@gmail.com>, Nikolay Norkin <zduderman@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.4"
+    "@actions/core": "^1.6.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.9",
