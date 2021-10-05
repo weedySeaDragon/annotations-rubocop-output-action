@@ -1,3 +1,4 @@
+import Offense from "./offense"
 import Annotation, {AnnotationProperties} from "./annotation"
 import {promises as fs} from "fs"
 import {resolve} from "path"
@@ -9,17 +10,6 @@ type RubocopJSON = {
 type File = {
   path: string
   offenses: Offense[]
-}
-
-type Offense = {
-  cop_name: string
-  message: string
-  location: OffenseLocation
-}
-
-type OffenseLocation = {
-  column: number
-  line: number
 }
 
 type StatError = {
@@ -49,16 +39,18 @@ async function read(path: string): Promise<string> {
 }
 
 type AnnotationBuilderFunction = (offense: Offense) => Annotation
+
 function buildAnnotationFromOffense(file: string): AnnotationBuilderFunction {
   return (offense: Offense) => {
     const message = `[${offense.cop_name}] ${offense.message}`
     const properties: AnnotationProperties = {
       file,
       col: offense.location.column,
-      line: offense.location.line
+      line: offense.location.line,
+      cop_name: offense.cop_name
     }
 
-    return new Annotation(message, properties)
+    return new Annotation(offense.severity, message, properties)
   }
 }
 
