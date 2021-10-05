@@ -1,19 +1,24 @@
 import {issueCommand} from "@actions/core/lib/command"
-
-type Level = "warning" | "error" | "convention"
+import {OffenseSeverity} from "./offense"
 
 export interface AnnotationProperties {
-  file?: string
-  line?: number
-  col?: number
+  file?: String
+  line?: Number
+  col?: Number
+  cop_name?: String
 }
 
 class Annotation {
   message: string
-  level: Level = "error"
+  level: OffenseSeverity = OffenseSeverity.ERROR
   properties: AnnotationProperties
 
-  constructor(message: string, properties: AnnotationProperties = {}) {
+  constructor(
+    level: OffenseSeverity,
+    message: string,
+    properties: AnnotationProperties = {}
+  ) {
+    this.level = level
     this.message = message
     this.properties = properties
   }
