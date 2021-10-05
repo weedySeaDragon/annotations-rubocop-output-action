@@ -27,20 +27,20 @@
     "@actions/core": "^1.6.0"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.9",
+    "@types/jest": "^27.0.2",
     "@types/node": "^14.0.25",
     "@typescript-eslint/parser": "^3.9.0",
     "@zeit/ncc": "^0.22.3",
     "eslint": "^7.5.0",
     "eslint-plugin-github": "^4.1.2",
-    "eslint-plugin-jest": "^23.18.0",
-    "jest": "^24.9.0",
-    "jest-circus": "^26.3.0",
-    "jest-mock-process": "^1.4.0",
+    "eslint-plugin-jest": "^25.0.0-next.5",
+    "jest": "^27.0.0",
+    "jest-circus": "^27.2",
+    "jest-mock-process": "1.4.1",
     "js-yaml": "^4.1.0",
     "prettier": "2.4.1",
     "temp-write": "^4.0.0",
-    "ts-jest": "^24.3.0",
+    "ts-jest": "^27.0.5",
     "typescript": "^3.9.7"
   }
 }
